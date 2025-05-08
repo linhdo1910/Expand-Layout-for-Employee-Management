@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/title_em_employeemanagement"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Nhập thông tin nhân viên -->
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_em_name_hint" />
+
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_em_age_hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_em_department_hint" />
+
+        <EditText
+            android:id="@+id/edtSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_em_skills_hint" />
+
+        <EditText
+            android:id="@+id/edtSelfdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_em_selfdes_hint"
+            android:minLines="3" />
+
+        <!-- Nút thêm nhân viên -->
+        <Button
+            android:id="@+id/btnAddEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2196F3"
+            android:text="@string/title_em_button_add" />
+
+        <!-- Tiêu đề danh sách -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/title_em_employeelist"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Danh sách demo -->
+        <TextView
+            android:text="👤 John Doe\nAge: 30\nDept: IT\nSkills: Java, SQL\nDesc: Enthusiastic developer"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="👤 Jane Smith\nAge: 28\nDept: HR\nSkills: Recruiting\nDesc: Friendly and helpful"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="👤 Alex Nguyen\nAge: 35\nDept: Marketing\nSkills: SEO, Ads\nDesc: Creative thinker"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="👤 Lisa Tran\nAge: 26\nDept: Sales\nSkills: Negotiation\nDesc: High closer rate"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="👤 Minh Hoang\nAge: 31\nDept: Finance\nSkills: Excel, Budgeting\nDesc: Detail-oriented"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Layout chứa danh sách nhân viên thêm mới -->
+        <LinearLayout
+            android:id="@+id/employeeListLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
