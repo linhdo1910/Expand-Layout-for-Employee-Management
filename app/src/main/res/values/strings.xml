@@ -19,4 +19,14 @@
     <string name="title_em_selfdes_hint">Self description</string>
     <string name="title_em_employeelist">---Employee List---</string>
     <string name="title_em_button_add">Add employee</string>
+    <string name="title_employee_healthcare">Healthcare</string>
+    <string name="title_employee_salary">Salary</string>
+    <string name="title_activity_employee_healthcare">Employee Healthcare</string>
+    <string name="title_height">Height:</string>
+    <string name="title_weight">Weight:</string>
+    <string name="title_calculate">Calculate</string>
+    <string name="title_clear">Clear</string>
+    <string name="title_close">Close</string>
+    <string name="title_main_category">Category</string>
+    <string name="title_main_product">Product</string>
 </resources>
