@@ -101,17 +101,17 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imgCategory"
+                    android:id="@+id/imgProducts"
                     android:layout_width="100dp"
                     android:layout_height="108dp"
                     android:textAlignment="center"
-                    app:srcCompat="@mipmap/ic_category" />
+                    app:srcCompat="@mipmap/ic_products" />
 
                 <TextView
-                    android:id="@+id/txtCategory"
+                    android:id="@+id/txtProducts"
                     android:layout_width="212dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_main_category"
+                    android:text="@string/title_main_products"
                     android:textAlignment="center"
                     android:textColor="#2196F3"
                     android:textColorLink="#2196F3"
@@ -132,17 +132,17 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imgProduct"
+                    android:id="@+id/imgAdvancedProducts"
                     android:layout_width="100dp"
                     android:layout_height="108dp"
                     android:textAlignment="center"
-                    app:srcCompat="@mipmap/ic_product" />
+                    app:srcCompat="@mipmap/ic_advancedproducts" />
 
                 <TextView
-                    android:id="@+id/txtProduct"
+                    android:id="@+id/txtAdvancedProducts"
                     android:layout_width="212dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_main_product"
+                    android:text="@string/title_main_advancedproducts"
                     android:textAlignment="center"
                     android:textColor="#2196F3"
                     android:textColorLink="#2196F3"
