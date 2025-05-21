@@ -18,10 +18,9 @@ public class MainActivity extends AppCompatActivity {
     TextView txtEmployee;
     ImageView imgCustomer;
     TextView txtCustomer;
-    ImageView imgCategory;
-    TextView txtCategory;
-    ImageView imgProduct;
-    TextView txtProduct;
+    ImageView imgProducts;
+    TextView txtProducts;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,25 +64,13 @@ public class MainActivity extends AppCompatActivity {
                 openCustomerManagementActivity();
             }
         });
-        imgCategory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openCategoryManagementActivity();
-            }
-        });
-        txtCategory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openCategoryManagementActivity();
-            }
-        });
-        imgProduct.setOnClickListener(new View.OnClickListener() {
+        imgProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openProductManagementActivity();
             }
         });
-        txtProduct.setOnClickListener(new View.OnClickListener() {
+        txtProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openProductManagementActivity();
@@ -96,10 +83,8 @@ public class MainActivity extends AppCompatActivity {
         txtEmployee=findViewById(R.id.txtEmployee);
         imgCustomer=findViewById(R.id.imgCustomer);
         txtCustomer=findViewById(R.id.txtCustomer);
-        imgCategory=findViewById(R.id.imgCategory);
-        txtCategory=findViewById(R.id.txtCategory);
-        imgProduct=findViewById(R.id.imgProduct);
-        txtProduct=findViewById(R.id.txtProduct);
+        imgProducts=findViewById(R.id.imgProducts);
+        txtProducts=findViewById(R.id.txtProducts);
     }
         private void openEmployeeManagementActivity() {
             Intent intent = new Intent(MainActivity.this, EmployeeManagementActivity.class);
@@ -108,11 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
         private void openCustomerManagementActivity() {
             Intent intent = new Intent(MainActivity.this, CustomerManagementActivity.class);
-            startActivity(intent);
-        }
-
-        private void openCategoryManagementActivity() {
-            Intent intent = new Intent(MainActivity.this, CategoryManagementActivity.class);
             startActivity(intent);
         }
 
